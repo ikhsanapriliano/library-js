@@ -8,6 +8,10 @@ const router = express.Router();
 const PORT = 3000;
 
 // Example route
+app.get('/', async (req, res) => {
+    res.json({ message: 'welcome' });
+});
+
 app.get('/code/:id', async (req, res) => {
     const item_codes = req.params.id
 
